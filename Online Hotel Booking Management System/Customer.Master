@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Customer.Master.cs" Inherits="Online_Hotel_Booking_Management_System.test1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+ 
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+Welcome to our hotel, where comfort meets sophistication, 
+            and hospitality takes center stage. At TARUMT Hotel, 
+            we pride ourselves on providing a warm and inviting atmosphere for our guests.
+            Our dedicated team is committed to ensuring that your stay is nothing short of exceptional. 
+            From the moment you step into our stylish lobby, you'll be greeted with a blend of modern elegance and personalized service.</p>
+        <asp:HyperLink ID="HyperLink1" runat="server" Text="Learn More" Font-Underline="True" ForeColor="#003399"></asp:HyperLink>
+        <div class="icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o" aria-hidden="true"> by </i></p>
+    </section>
+        </form>
+</body>
+
+    
+     <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+         function toggleDropdown() {
+             var dropdownContent = document.getElementById("dropdownContent");
+             dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+         }
+
+
+
+     </script>
+</html>
